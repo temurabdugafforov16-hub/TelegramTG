@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Saver</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sidebar" class="sidebar closed">
+    <img src="./image.png" alt="Profile" class="profile-img">
+
+    <ul id="menu">
+      <li data-key="home">Home</li>
+      <li data-key="gallery">Gallery</li>
+      <li data-key="info">Info</li>
+    </ul>
+
+    <select id="langSelect">
+      <option value="uz">uz</option>
+      <option value="ru">ru</option>
+      <option value="en">en</option>
+    </select>
+  </div>
+
+  <div class="buttons">
+    <button id="openBtn">open</button>
+    <button id="closeBtn">close</button>
+  </div>
+
+  <div id="content" class="content hidden">
+    <section class="form-section">
+      <h2>Yangi kontakt qo‘shish</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Ismingizni kiriting" required />
+        <input type="text" id="surname" placeholder="Familiyangizni kiriting" required />
+        <input type="number" id="birthyear" placeholder="Tug‘ilgan yilingiz" required />
+        <input type="tel" id="phone" placeholder="Telefon raqamingiz" required />
+        <button type="submit">Saqlash</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Saqlangan kontaktlar</h2>
+      <ul id="contactList"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

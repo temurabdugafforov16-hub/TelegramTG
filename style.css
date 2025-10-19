@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0a0a0a;
+  color: white;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: #141414;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.sidebar.closed {
+  left: -220px;
+}
+
+.sidebar img.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin: 25px 0;
+  border: 2px solid #0ff;
+  object-fit: cover;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar ul li {
+  padding: 12px 0;
+  font-size: 18px;
+  cursor: pointer;
+  color: #0ff;
+  transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+  color: #fff;
+  background: #0ff3;
+}
+
+#langSelect {
+  margin-top: auto;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  border: none;
+  background: #0ff;
+  color: #000;
+  border-radius: 5px;
+}
+
+.buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+button {
+  background-color: #00f2ff;
+  color: #000;
+  border: none;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00f2ff;
+}
+
+button:hover {
+  background-color: #00c8d6;
+  box-shadow: 0 0 20px #00f2ff;
+}
+
+.content {
+  margin-left: 240px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  transition: all 0.4s;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  background: #1c1c1c;
+  border: 1px solid #0ff;
+  box-shadow: 0 0 20px #0ff3;
+  border-radius: 15px;
+  width: 400px;
+  padding: 20px;
+  margin: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #00f2ff;
+}
+
+form input {
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #0ff;
+  background: #000;
+  color: #0ff;
+  outline: none;
+}
+
+form button {
+  display: block;
+  margin: 15px auto;
+  background: #00f2ff;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #00c8d6;
+}
+
+#contactList {
+  list-style: none;
+  padding: 0;
+}
+
+#contactList li {
+  background: #0d0d0d;
+  border-left: 4px solid #00f2ff;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #0ff2;
+}
